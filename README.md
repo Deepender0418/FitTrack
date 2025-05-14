@@ -75,7 +75,12 @@ fitness-tracker/
 Create a `.env` file in the root directory with the following:
 
 ```env
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+# Server
 PORT=5000
+NODE_ENV=development
+JWT_SECRET=your_jwt_secret
+MONGO_URI=your_mongodb_connection_string
 
+# Client
+CLIENT_URL=http://localhost:5173
+VITE_API_URL=http://localhost:5000/api
